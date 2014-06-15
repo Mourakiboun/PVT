@@ -1,7 +1,7 @@
  body { margin:0; padding:0; }
   #header { position:absolute; top:0; bottom:0; width:100%; height: 50px;background-color:#e3e3e3;text-align: center;} 
   #map { position:absolute; top:50px; bottom:0; width:100%; }
-  #logo { position:absolute;  left:15px;bottom:20px; width:150px; height: 210px;text-align: center;}  
+  #logo { position:absolute;  left:15px;bottom:20px; width:143px; height: 45px;text-align: center;}  
   #disclaimer { color:black;position:absolute;  right: 10px;bottom:0; padding:0 10px 0 10px;background-color: white;} 
 
   #back { 
@@ -18,49 +18,47 @@
 	
 	z-index: 99;}
 
-	#foot_left{
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
+	
 	#foot_right{
 		position: absolute;
 		top: 0;
-		right: 0;
+		right: 10px;
+		width: 143px;
+		height: 45px;
 	}
 	
-.story-main-space {
-
-    background-color: #e3e3e3;
-    color: white;
-    margin: 70px auto 20px;
-    height: 200px;
-    padding: 20px;
-    width: 60%;
+.image{
+	margin: 150px 50px 50px 50px;
+	display:inline-block;
+	text-align:center;
 }
 
 
 
-.story-main-details h1 {
-	text-decoration: none;
-	font-size: 30px;
-	line-height: 44px;
-    color:black;
-    text-decoration: none;
-    
+
+.info {
+	padding: 6px 8px;
+	font: 14px/16px Arial, Helvetica, sans-serif;
+	background: white;
+	background: rgba(255,255,255,0.8);
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	border-radius: 5px;
+}
+.info h4 {
+	margin: 0 0 5px;
+	color: #777;
 }
 
-
-.story-main-details a {
-	text-decoration: none;
-	display:inline; 
+.legend {
+	text-align: left;
+	line-height: 18px;
+	color: #555;
+}
+.legend i {
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-right: 8px;
+	opacity: 0.7;
+}
 	
-
-}
-
-
-
-.leaflet-bottom{
-	margin-bottom: 30px; !important
-
-}
