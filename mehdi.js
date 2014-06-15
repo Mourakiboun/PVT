@@ -31,12 +31,12 @@
 		// get color depending on population density value
 		function getColor(d) {
 			return d > 99 ? '#54c200' :
-			       d > 89  ? '#9c0' :
-			       d > 74  ? '#b4ff05' :
-			       d > 49  ? '#ebff6b' :
-			       d > 24  ? '#ffce6b' :
-			       d > 9  ? '#ff9238' :
-			       d > 0  ? '#ff7b61' :
+			       d > 95  ? '#9c0' :
+			       //d > 95  ? '#b4ff05' :
+			       d > 89  ? '#ebff6b' :
+			       d > 80  ? '#ffce6b' :
+			       
+			       d > 0  ? '#c00' :
 			       d = 0   ? '#c00' :
 			                 '#c00';
 		}
@@ -106,20 +106,19 @@
 		legend.onAdd = function (map) {
 
 			var div = L.DomUtil.create('div', 'info legend'),
-				grades = [1, 10, 25, 50, 75, 90, 99],
+				grades = [0, 80, 90, 95, 99],
 				labels = [],
 				from, to;
 
 
-				labels.push(
-					'<i style="background:' + getColor(0) + '"></i> 0%'); 
+				
 
 			for (var i = 0; i < grades.length-1; i++) {
 				from = grades[i];
 				to = grades[i + 1];
 
 				labels.push(
-					'<i style="background:' + getColor(from) + '"></i> ' +
+					'<i style="background:' + getColor(from+1) + '"></i> ' +
 					from + '&ndash;' + to+'&#37;' );
 			}
 			labels.push(
