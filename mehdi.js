@@ -16,7 +16,7 @@
 		};
 
 		info.update = function (props) {
-			this._div.innerHTML = '<h4>MOURAKIBOUN ELECTIONS DATA</h4>' +  (props ?
+			this._div.innerHTML = '<h4>MOURAKIBOUN RESPONSE RATE</h4>' +  (props ?
 				'District : <b>' + props.NAME + '</b><br />' 
 				+'Coordinator Name : <b>'+ props.c_name + '</b><br />'
 				+'Coordinator Phone : <b>'+ props.c_phone + '</b><br /><br />'
